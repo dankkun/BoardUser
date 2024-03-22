@@ -32,11 +32,13 @@ public ModelAndView list() {
 @RequestMapping("/WriteForm")
 public ModelAndView writeForm() {
 	ModelAndView mv     = new ModelAndView();
+	
 	LocalDateTime today = LocalDateTime.now(); 
 	String now = today.format(DateTimeFormatter.ofPattern("yyyy-mm-dd HH:mm:ss:SSSS"));
 	DayOfWeek wkday = today.getDayOfWeek();
 	now  += " " + wkday;
 	mv.addObject("now", now);
+	
 	mv.setViewName("users/write");
 	return mv;
 }

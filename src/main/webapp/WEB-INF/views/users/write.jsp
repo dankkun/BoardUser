@@ -56,7 +56,7 @@
     </tr>
     <tr>
       <td>포인트</td>
-      <td><input type="text" value="1000" readonly /></td>
+      <td><input type="text" name="upoint" value="3000" readonly /></td>
     </tr>
     <tr>
       <td>가입일</td>

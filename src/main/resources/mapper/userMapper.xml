@@ -23,13 +23,17 @@
    USERID, 
    PASSWD, 
    USERNAME, 
-   EMAIL
+   EMAIL,
+   UPOINT,
+   INDATE
    )
    VALUES (
     #{ userid   },
     #{ passwd   },
     #{ username },
-    #{ email    }
+    #{ email    },
+    #{ upoint    },
+    SYSDATE
    )
    
   
